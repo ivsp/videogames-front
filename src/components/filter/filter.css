@@ -1,0 +1,31 @@
+.order_button{
+    background-color: #999999;
+    border:none
+   
+}
+.order_button:hover{
+    background-color: #696969;
+
+}
+
+.applyFilter_button{
+    background-color: #333333;
+    border:none;
+    font-weight: bold;
+}
+
+.applyFilter_button:hover{
+    background-color: #333333;
+
+}
+
+.deleteFilter_button{
+    background-color: #d86060;
+    border:none;
+    font-weight: bold;
+}
+
+.deleteFilter_button:hover{
+    background-color: #b45757fb;
+color: #ffffff
+}

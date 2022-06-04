@@ -1,0 +1,10 @@
+.applyFilter_button{
+    background-color: #333333;
+    border:none;
+    font-weight: bold;
+}
+
+.applyFilter_button:hover{
+    background-color: #333333;
+
+}

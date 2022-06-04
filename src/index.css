@@ -1,13 +1,61 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "rubik-regular";
+  src: url(./assets/fonts/rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: "rubik-medium";
+  src: url(./assets/fonts/rubik/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: "rubik-semibold";
+  src: url(./assets/fonts/rubik/Rubik-SemiBold.ttf);
+}
+@font-face {
+  font-family: "rubik-bold";
+  src: url(./assets/fonts/rubik/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: "rubik-black";
+  src: url(./assets/fonts/rubik/Rubik-Black.ttf);
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+  font-family: "rubik-regular";
+}
+
+.row{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.col{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input:focus, select:focus, select, input.form-control:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+ 
+}
+
+button:focus, button:active,.btn-check:focus + .btn-secondary,.btn-check:active, .btn:active, .btn-secondary:focus, .btn-secondary:active, .btn:focus, .btn:active, .btn:hover, .btn {
+  outline:none !important;
+  outline-width: 0 !important;
+  border-color: transparent;
+  box-shadow: none;
 }

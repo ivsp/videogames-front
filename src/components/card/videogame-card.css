@@ -1,0 +1,10 @@
+.addGame_button{
+    background-color: #333333;
+    border:none;
+    font-weight: bold;
+}
+
+.addGame_button:hover{
+    background-color: #333333;
+
+}
