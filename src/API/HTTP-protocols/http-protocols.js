@@ -16,7 +16,7 @@ export async function validateNewUser(token) {
 }
 
 export async function logInUser(body) {
-  const r = await fetch("${process.env.REACT_APP_URL}/auth/login", {
+  const r = await fetch(`${process.env.REACT_APP_URL}/auth/login`, {
     method: "POST",
     body: JSON.stringify(body),
     headers: {
@@ -49,7 +49,7 @@ export async function getUserData(token) {
 }
 
 export async function getAllGames() {
-  const r = await fetch("${process.env.REACT_APP_URL}/api/games");
+  const r = await fetch(`${process.env.REACT_APP_URL}/api/games`);
 
   if (r.status === 404) return r;
   else {

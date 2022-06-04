@@ -66,7 +66,7 @@ function VideoGameCard() {
                 >
                   <Card
                     style={{
-                      height: "70vh",
+                      height: "75vh",
                     }}
                   >
                     <Card.Img

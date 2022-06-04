@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/validate" element={<Validate />}></Route>
+        <Route path="/login" element={<Validate />}></Route>
         <Route path="/details/:name" element={<DetailsPage />}></Route>
       </Routes>
     </BrowserRouter>
