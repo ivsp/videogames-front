@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ideogames-front/static/css/main.1c1007ea.css",
+    "main.js": "/ideogames-front/static/js/main.f602ce52.js",
+    "static/js/787.12dabff0.chunk.js": "/ideogames-front/static/js/787.12dabff0.chunk.js",
+    "static/media/Rubik-Regular.ttf": "/ideogames-front/static/media/Rubik-Regular.da39336cfcac7980f2f1.ttf",
+    "static/media/Rubik-Medium.ttf": "/ideogames-front/static/media/Rubik-Medium.5bd2b2c6ad8019567605.ttf",
+    "static/media/Rubik-SemiBold.ttf": "/ideogames-front/static/media/Rubik-SemiBold.52d2adf4cb818e79b61d.ttf",
+    "static/media/Rubik-Bold.ttf": "/ideogames-front/static/media/Rubik-Bold.383b8c94b12034c5e8b5.ttf",
+    "static/media/Rubik-Black.ttf": "/ideogames-front/static/media/Rubik-Black.2b561a8eed0dced30c19.ttf",
+    "index.html": "/ideogames-front/index.html",
+    "main.1c1007ea.css.map": "/ideogames-front/static/css/main.1c1007ea.css.map",
+    "main.f602ce52.js.map": "/ideogames-front/static/js/main.f602ce52.js.map",
+    "787.12dabff0.chunk.js.map": "/ideogames-front/static/js/787.12dabff0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c1007ea.css",
+    "static/js/main.f602ce52.js"
+  ]
+}
