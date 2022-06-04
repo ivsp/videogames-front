@@ -77,7 +77,7 @@ function VideoGameCard() {
                       variant="top"
                       src={
                         g?.file !== "static/undefined"
-                          ? `http://localhost:4000/${g.file}`
+                          ? `${process.env.REACT_APP_URL}/${g.file}`
                           : notAvailable
                       }
                     />

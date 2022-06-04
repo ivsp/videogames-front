@@ -1,5 +1,5 @@
 export async function registerNewUser(body) {
-  await fetch(`http://localhost:4000/auth/register`, {
+  await fetch(`${process.env.REACT_APP_URL}/auth/register`, {
     method: "POST",
     body: JSON.stringify(body),
     headers: {
@@ -9,12 +9,14 @@ export async function registerNewUser(body) {
 }
 
 export async function validateNewUser(token) {
-  const r = await fetch(`http://localhost:4000/auth/validate?token=${token}`);
+  const r = await fetch(
+    `${process.env.REACT_APP_URL}/auth/validate?token=${token}`
+  );
   return r;
 }
 
 export async function logInUser(body) {
-  const r = await fetch("http://localhost:4000/auth/login", {
+  const r = await fetch("${process.env.REACT_APP_URL}/auth/login", {
     method: "POST",
     body: JSON.stringify(body),
     headers: {
@@ -31,7 +33,7 @@ export async function logInUser(body) {
 }
 
 export async function getUserData(token) {
-  const r = await fetch(`http://localhost:4000/users`, {
+  const r = await fetch(`${process.env.REACT_APP_URL}/users`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -47,7 +49,7 @@ export async function getUserData(token) {
 }
 
 export async function getAllGames() {
-  const r = await fetch("http://localhost:4000/api/games");
+  const r = await fetch("${process.env.REACT_APP_URL}/api/games");
 
   if (r.status === 404) return r;
   else {
@@ -57,13 +59,16 @@ export async function getAllGames() {
 }
 
 export async function createNewGame(body, token, email) {
-  const r = await fetch(`http://localhost:4000/api/games?email=${email}`, {
-    method: "POST",
-    body: body,
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  });
+  const r = await fetch(
+    `${process.env.REACT_APP_URL}/api/games?email=${email}`,
+    {
+      method: "POST",
+      body: body,
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
   if (r.status === 409) {
     return r;
   } else {

@@ -55,7 +55,7 @@ function VideoGameDetails() {
                   }}
                   src={
                     gameDetails?.file
-                      ? `http://localhost:4000/${gameDetails?.file}`
+                      ? `${process.env.REACT_APP_URL}/${gameDetails?.file}`
                       : notAvailable
                   }
                   alt={`Imagen del juego ${gameDetails?.name}`}
